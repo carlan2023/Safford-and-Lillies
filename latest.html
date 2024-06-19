@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Safford and Lilies - ISO Certification Services</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css"
+    />
+    <style>
+      body {
+        background-color: #2c2f33;
+        color: #ffffff;
+      }
+      nav,
+      footer {
+        background-color: #23272a;
+      }
+      nav a {
+        color: #00aaff; /* Bright blue color for navigation links */
+        font-weight: bold;
+      }
+      .dropdown {
+        position: relative;
+        display: inline-block;
+      }
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+      }
+      .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 1rem;
+      }
+      .card {
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        padding: 1rem;
+        background-color: #444;
+      }
+      .card img {
+        max-width: 100%;
+        border-bottom: 1px solid #ccc;
+        margin-bottom: 1rem;
+      }
+      .card h4,
+      h2,
+      h3,
+      p,
+      small {
+        color: #ffffff;
+        filter: brightness(1.2); /* Increase brightness of the text */
+      }
+    </style>
+    <script>
+      function showPage(pageId) {
+        const pages = document.querySelectorAll(".page");
+        pages.forEach((page) => (page.style.display = "none"));
+        document.getElementById(pageId).style.display = "block";
+      }
+    </script>
+  </head>
+  <body onload="showPage('home')">
+    <nav class="container-fluid">
+      <ul>
+        <li><strong>Safford and Lilies</strong></li>
+      </ul>
+      <ul>
+        <li><a href="#" onclick="showPage('home')">Home</a></li>
+        <li><a href="#" onclick="showPage('about')">About</a></li>
+        <li class="dropdown">
+          <a href="#">Consultancy</a>
+          <div class="dropdown-content">
+            <a href="#" onclick="showPage('energy')">Energy (Oil and Gas)</a>
+            <a href="#" onclick="showPage('building-information-management')"
+              >Building Information Management</a
+            >
+            <a href="#" onclick="showPage('innovation')">Innovation</a>
+            <a href="#" onclick="showPage('fire-safety-security')"
+              >Fire, Safety & Security</a
+            >
+            <a href="#" onclick="showPage('taxation')">Taxation</a>
+            <a href="#" onclick="showPage('decision-makers')"
+              >Decision Makers</a
+            >
+            <a href="#" onclick="showPage('immigration')">Immigration</a>
+          </div>
+        </li>
+        <li class="dropdown">
+          <a href="#">Contact</a>
+          <div class="dropdown-content">
+            <a href="#" onclick="showPage('contact-form')">Contact Form</a>
+          </div>
+        </li>
+      </ul>
+    </nav>
+
+    <main class="container">
+      <div id="home" class="page">
+        <hgroup>
+          <h2>Welcome to Safford and Lilies</h2>
+          <h3>Your Trusted Partner in ISO Certification</h3>
+        </hgroup>
+        <p>
+          Safford and Lilies provides comprehensive ISO certification services.
+          We ensure that companies, after certification, can be verified with
+          the IAF (International Accreditation Forum), the European
+          Certification Board, and the American Certification Board. We also
+          coordinate and provide certification with the Uganda Standards.
+        </p>
+        <figure>
+          <img src="Kla.jpg" alt="ISO Certification Icon" />
+          <figcaption>
+            <a href="https://www.iso.org/certification.html" target="_blank"
+              >Learn more about ISO certification</a
+            >
+          </figcaption>
+        </figure>
+        <h3>Why Choose Us?</h3>
+        <p>
+          Our team of experts provides tailored solutions to meet your
+          certification needs, ensuring your business complies with the latest
+          ISO standards.
+        </p>
+        <h3>Our Services</h3>
+        <p>
+          From initial consultation to final certification, we support you every
+          step of the way.
+        </p>
+      </div>
+
+      <div id="energy" class="page" style="display: none">
+        <h2>Energy (Oil and Gas)</h2>
+        <p>Details about Energy (Oil and Gas) services...</p>
+      </div>
+
+      <div
+        id="building-information-management"
+        class="page"
+        style="display: none"
+      >
+        <h2>Building Information Management</h2>
+        <p>Details about Building Information Management services...</p>
+      </div>
+
+      <div id="innovation" class="page" style="display: none">
+        <h2>Innovation</h2>
+        <p>Details about Innovation services...</p>
+      </div>
+
+      <div id="fire-safety-security" class="page" style="display: none">
+        <h2>Fire, Safety & Security</h2>
+        <p>Details about Fire, Safety & Security services...</p>
+      </div>
+
+      <div id="taxation" class="page" style="display: none">
+        <h2>Taxation</h2>
+        <p>Details about Taxation services...</p>
+      </div>
+
+      <div id="decision-makers" class="page" style="display: none">
+        <h2>Decision Makers</h2>
+        <p>Details about Decision Makers services...</p>
+      </div>
+
+      <div id="immigration" class="page" style="display: none">
+        <h2>Immigration</h2>
+        <p>Details about Immigration services...</p>
+      </div>
+
+      <div id="contact-form" class="page" style="display: none">
+        <h2>Contact Us</h2>
+        <form>
+          <fieldset>
+            <legend>Contact Details</legend>
+            <label for="first-name">First Name:</label>
+            <input type="text" id="first-name" name="first-name" required />
+
+            <label for="last-name">Last Name:</label>
+            <input type="text" id="last-name" name="last-name" required />
+
+            <label for="company-name">Company Name:</label>
+            <input type="text" id="company-name" name="company-name" required />
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+
+            <label for="phone">Telephone Number:</label>
+            <input type="tel" id="phone" name="phone" required />
+          </fieldset>
+
+          <fieldset>
+            <legend>Inquiry Details</legend>
+            <label for="enquiry-type">Area of Interest:</label>
+            <select id="enquiry-type" name="enquiry-type">
+              <option value="sales">Sales</option>
+              <option value="services">Services</option>
+              <option value="support">Support</option>
+            </select>
+
+            <label for="service">Service:</label>
+            <select id="service" name="service">
+              <option value="consulting">Consulting</option>
+              <option value="training">Training</option>
+              <option value="certification">Certification</option>
+            </select>
+
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="message" rows="4"></textarea>
+          </fieldset>
+
+          <label for="accept-policy">
+            <input
+              type="checkbox"
+              id="accept-policy"
+              name="accept-policy"
+              required
+            />
+            I have read and agree to the <a href="#">Privacy Policy</a> and
+            <a href="#">Terms of Service</a>.
+          </label>
+
+          <button type="submit" onclick="event.preventDefault()">Submit</button>
+        </form>
+      </div>
+    </main>
+
+    <footer class="container">
+      <small>
+        <a href="#">Privacy Policy</a> • <a href="#">Terms of Service</a>
+        <br />
+        Address: 123 Certification Lane, Kampala, Uganda
+        <br />
+        Email:
+        <a href="mailto:info@saffordandlilies.com">info@saffordandlilies.com</a>
+      </small>
+    </footer>
+  </body>
+</html>
